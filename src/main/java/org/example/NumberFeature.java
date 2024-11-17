@@ -9,6 +9,21 @@ public class NumberFeature {
         Scanner in = new Scanner(System.in);
         inputNumber = in.nextInt();
         // 你的代码逻辑
+        int digit = 1;
+        int binaryResult = 0;
+        int binaryValue = 1;
+
+        while (inputNumber > 0) {
+            int currentDigit = inputNumber % 10;
+            if ((currentDigit % 2 == 0 && digit % 2 == 0) || (currentDigit % 2!= 0 && digit % 2!= 0)) {
+                binaryResult += binaryValue;
+            }
+            inputNumber /= 10;
+            digit++;
+            binaryValue *= 2;
+        }
+
+
 
         result = inputNumber;
 
