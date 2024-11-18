@@ -25,7 +25,6 @@ public class NumberFeature {
 
 
 
-        binaryResult = inputNumber;
 
         System.out.println(binaryResult);
     }
